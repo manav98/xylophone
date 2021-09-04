@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audio_cache.dart';
 
-void main() {
-  runApp(XylophoneApp());
-}
+void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
   void playSound(int noteNUmber) {
@@ -11,7 +9,7 @@ class XylophoneApp extends StatelessWidget {
     player.play('note$noteNUmber.wav');
   }
 
-  Expanded buildKey({Color buttonColor, int noteNumber}) {
+  Expanded buildKey(Color buttonColor, int noteNumber) {
     return Expanded(
       child: FlatButton(
         padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
